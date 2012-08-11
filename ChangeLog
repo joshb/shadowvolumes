@@ -1,0 +1,6 @@
+Sun Aug 31 2008  Josh Beam  <josh@3ddrome.com>
+	* scene.c: Made light_pos be added to each vertex in the v array
+	  after the vertices are multiplied by M_INFINITY. This fixes some
+	  rendering issues. Thanks to Tong for pointing this out.
+	* main.c: Added stdlib.h include to get rid of implicit declaration
+	  warning in gcc for the exit function.
